@@ -1,0 +1,9 @@
+spring:
+  config:
+    import: optional:file:.env[.properties]
+  kafka:
+    bootstrap-servers: ${KAFKA_BOOTSTRAP_SERVERS}
+  application:
+    name: generator-microservice
+server:
+  port: 8081
